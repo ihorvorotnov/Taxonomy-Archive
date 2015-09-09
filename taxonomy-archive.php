@@ -14,3 +14,33 @@
  * @package Taxonomy_Archive
  */
 
+/**
+ * If this file is called directly, abort.
+ */
+if ( ! defined( 'WPINC' ) ) {
+	die;
+}
+
+/**
+ * Activate plugin
+ */
+function taxar_install() {
+
+}
+register_activation_hook( __FILE__, 'taxar_install' );
+
+/**
+ * Deactivate plugin
+ */
+function taxar_deactivate() {
+
+}
+register_deactivation_hook( __FILE__, 'taxar_deactivate' );
+
+/**
+ * Uninstall plugin
+ */
+function taxar_uninstall() {
+
+}
+register_uninstall_hook ( __FILE__, 'taxar_uninstall' );
