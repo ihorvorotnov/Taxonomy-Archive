@@ -44,3 +44,8 @@ function taxar_uninstall() {
 
 }
 register_uninstall_hook ( __FILE__, 'taxar_uninstall' );
+
+/**
+ * Include plugin code.
+ */
+include_once( dirname( __FILE__ ) . '/taxonomy-archive-functions.php' );
