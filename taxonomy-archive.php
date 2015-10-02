@@ -24,26 +24,26 @@ if ( ! defined( 'WPINC' ) ) {
 /**
  * Activate plugin
  */
-function taxar_install() {
+function pssta_activate() {
 
 }
-register_activation_hook( __FILE__, 'taxar_install' );
+register_activation_hook( __FILE__, 'pssta_activate' );
 
 /**
  * Deactivate plugin
  */
-function taxar_deactivate() {
+function pssta_deactivate() {
 
 }
-register_deactivation_hook( __FILE__, 'taxar_deactivate' );
+register_deactivation_hook( __FILE__, 'pssta_deactivate' );
 
 /**
  * Uninstall plugin
  */
-function taxar_uninstall() {
+function pssta_uninstall() {
 
 }
-register_uninstall_hook( __FILE__, 'taxar_uninstall' );
+register_uninstall_hook( __FILE__, 'pssta_uninstall' );
 
 /**
  * Include plugin code.
