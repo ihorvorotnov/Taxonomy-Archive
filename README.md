@@ -1,6 +1,6 @@
 # Taxonomy-Archive
 
-**WORK IN PROGRESS / NOT READY FOR PRODUCTION**
+**WORK IN PROGRESS / NOT READY FOR PRODUCTION** [![Build Status](https://travis-ci.org/ihorvorotnov/Taxonomy-Archive.svg?branch=master)](https://travis-ci.org/ihorvorotnov/Taxonomy-Archive)
 
 A WordPress plugin for taxonomy archive pages (a missing core feature).
 
