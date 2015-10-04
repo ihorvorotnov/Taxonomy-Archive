@@ -22,23 +22,28 @@ if ( ! defined( 'WPINC' ) ) {
 }
 
 /**
- * Activate plugin
+ * Activate the plugin.
  */
 function pssta_activate() {
+
+	pssta_rewrite_rules();
+	flush_rewrite_rules();
 
 }
 register_activation_hook( __FILE__, 'pssta_activate' );
 
 /**
- * Deactivate plugin
+ * Deactivate the plugin.
  */
 function pssta_deactivate() {
+
+	flush_rewrite_rules();
 
 }
 register_deactivation_hook( __FILE__, 'pssta_deactivate' );
 
 /**
- * Uninstall plugin
+ * Uninstall the plugin.
  */
 function pssta_uninstall() {
 
