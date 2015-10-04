@@ -34,10 +34,15 @@ register_activation_hook( __FILE__, 'pssta_activate' );
 
 /**
  * Deactivate the plugin.
+ *
+ * Deactivation happens after `init` and flushing rewrite rules here does nothing.
+ * Completely deleting them is not the most elegant solution, however, it's the only
+ * reliable way to remove custom rewrite rules without any manual user action.
+ * @link https://core.trac.wordpress.org/ticket/29118
  */
 function pssta_deactivate() {
 
-	flush_rewrite_rules();
+	delete_option( 'rewrite_rules' );
 
 }
 register_deactivation_hook( __FILE__, 'pssta_deactivate' );
